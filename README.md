@@ -2,6 +2,22 @@
 
 This is just my Configuration file for [Fastfetch](https://github.com/fastfetch-cli/fastfetch/).. that't it.
 
+To Install It:
+
+1. Make sure you already install Fastfetch:
+
+```bash
+pkg in fastfetch
+```
+
+2. Then, clone this Repo:
+
+```bash
+git clone https://github.com/GWLGT/My-Termux-Fastfetch-Configuration.git ~/.config/fastfetch
+```
+
+3. That's it, just run `fasfetch`, and you good to go **(See Note Below)**
+
 # Note
 
 If you have Mesa Package installed, make sure to put `LD_LIBRARY_PATH="/vendor/<arch-lib>:/system/<arch-lib>"` **(change `<arch-lib>` to folder based on your CPU Bit, e.g, `lib/` for 32 Bit, `lib64/` for 64 Bit)**, so the command becomes:
