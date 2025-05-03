@@ -47,3 +47,7 @@ fi
 ```
 
 so the Last Section of the Fastfetch Output show Correct Information.
+
+Also, at Line 141 in the "format" section, change `pacman` in the `{pacman}`
+and `(pacman)` to `{pkg}` and `(pkg)` if you're using `pkg` as your Termux Native
+Package manager instead of `pacman`.
