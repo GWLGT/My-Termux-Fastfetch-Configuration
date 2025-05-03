@@ -33,6 +33,8 @@ If you don't, Fastfetch will fetch **Wrong** OpenGL/OpenCL and your GPU Informat
 2. And, make sure to Put this Code in your Shell rc file:
 
 ```bash
+export USER="GWLC" # Change this to your own Name
+
 if [[ -n "$DISPLAY" ]]; then
   export WM="Openbox" # Change to your Window Manager Name
   export DE="None" # Change to your Desktop Environment Name
