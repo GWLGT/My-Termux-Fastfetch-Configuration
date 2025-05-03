@@ -2,6 +2,8 @@
 
 This is just my Configuration file for [Fastfetch](https://github.com/fastfetch-cli/fastfetch/).. that't it.
 
+![Fastfetch Preview](./img/preview.png)
+
 To Install It:
 
 1. Make sure you already install Fastfetch:
@@ -20,7 +22,7 @@ git clone https://github.com/GWLGT/My-Termux-Fastfetch-Configuration.git ~/.conf
 
 # Note
 
-If you have Mesa Package installed, make sure to put `LD_LIBRARY_PATH="/vendor/<arch-lib>:/system/<arch-lib>"` **(change `<arch-lib>` to folder based on your CPU Bit, e.g, `lib/` for 32 Bit, `lib64/` for 64 Bit)**, so the command becomes:
+1. If you have Mesa Package installed, make sure to put `LD_LIBRARY_PATH="/vendor/<arch-lib>:/system/<arch-lib>"` **(change `<arch-lib>` to folder based on your CPU Bit, e.g, `lib/` for 32 Bit, `lib64/` for 64 Bit)**, so the command becomes:
 
 ```bash
 LD_LIBRARY_PATH="/vendor/<arch-lib>:/system/<arch-lib>" fastfetch
@@ -28,7 +30,7 @@ LD_LIBRARY_PATH="/vendor/<arch-lib>:/system/<arch-lib>" fastfetch
 
 If you don't, Fastfetch will fetch **Wrong** OpenGL/OpenCL and your GPU Information.
 
-And, make sure to Put this Code in your Shell rc file:
+2. And, make sure to Put this Code in your Shell rc file:
 
 ```bash
 if [[ -n "$DISPLAY" ]]; then
@@ -48,6 +50,11 @@ fi
 
 so the Last Section of the Fastfetch Output show Correct Information.
 
-Also, at Line 141 in the "format" section, change `pacman` in the `{pacman}`
+4. Also, at Line 141 in the "format" section, change `pacman` in the `{pacman}`
 and `(pacman)` to `{pkg}` and `(pkg)` if you're using `pkg` as your Termux Native
 Package manager instead of `pacman`.
+
+5. Lastly, make sure that you are using Nerd Font Icons ([Download Here](https://www.nerdfonts.com/font-downloads)), so the icons
+will show up correctly.
+
+Replace `font.ttf` from `~/.termux/font.ttf` with Nerd Font of your Choice.
